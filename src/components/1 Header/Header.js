@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { Heading, Button, Flex } from "@chakra-ui/react";
+import NavMobile from "./NavMobile";
 
 function Header() {
   return (
@@ -10,7 +11,9 @@ function Header() {
         <Heading color="orange.300">.dev</Heading>
       </Flex>
       <Nav></Nav>
+      <NavMobile></NavMobile>
       <Button
+      display={{base: "none"}}
       backgroundColor="orange.300"
       marginRight={20}
       _hover={{backgroundColor: "orange.500", color: "white"}}>Contact me</Button>
