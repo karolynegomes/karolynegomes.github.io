@@ -46,10 +46,10 @@ function Portfolio() {
         <Center>
             <Box>
                 <Text align="center">My projects</Text>
-                <Heading>VISIT MY PORTFOLIO</Heading>
+                <Heading align="center">VISIT MY PORTFOLIO</Heading>
             </Box>
         </Center>
-        <Grid templateColumns='repeat(6, 1fr)' gap={10} padding={100}>
+        <Grid zIndex="-1" templateColumns='repeat(6, 1fr)' gap={10} padding={100} justifyContent="center">
             {Array.from({ length: 6 }).map((_, index) => (
             <GridItem key={index} colSpan={{ base: 6, lg: 3, xl: 2}}>
                 <PortfolioCard cards={[cards[index]]}/>

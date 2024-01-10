@@ -4,20 +4,14 @@ import MyPhoto from "./../../photos/myphotowithoutbackground.png"
 
 function Home() {
   return (
-    <Flex as="article" backgroundColor="orange.50">
-        <Box padding={{base: "100", sm: "75", md: "100", lg:"100",xl: "100"}} paddingRight={{base: "100", sm: "0", md: "0", lg:"0",xl: "0"}}>
-            <Text fontSize={{base: "2xl", sm: "md", md: "lg", lg:"xl",xl: "2xl"}}>Nice to meet you!</Text>
-            <Flex>
-                <Heading size={{base: "4xl", sm: "xl", md: "2xl", lg:"3xl",xl: "4xl"}}>My name is
-                    <Heading size={{base: "4xl", sm: "xl", md: "2xl", lg:"3xl",xl: "4xl"}} color="orange.300" fontStyle="italic">Karolyne</Heading> and I am a frontend developer.</Heading>
-            </Flex>
-            <Button
-            backgroundColor="orange.300"
-            marginTop={10}
-            _hover={{backgroundColor: "orange.500", color: "white"}}>Download my CV</Button>
+    <Flex as="article" backgroundColor="orange.50" width="100vw" paddingTop={20} zIndex="-1">
+        <Box paddingY={{base: "5", sm: "10", md: "20", lg:"50",xl: "100"}} paddingLeft={{base: "5", sm: "10", md: "20", lg:"50",xl: "100"}} display={{base: "flex"}} paddingRight={{base: "5", sm: "10", md: "20", lg:"0",xl: "0"}} display={{base: "flex"}} flexDirection="column" alignItems="left">
+            <Text fontSize={{base: "xl", sm: "md", md: "lg", lg:"xl",xl: "2xl"}}>Nice to meet you!</Text>
+            <Heading size={{base: "2xl", sm: "2xl", md: "2xl", lg:"3xl",xl: "4xl"}}>My name is <Heading as="span" size={{base: "2xl", sm: "2xl", md: "2xl", lg:"3xl",xl: "4xl"}} color="orange.300" fontStyle="italic"> Karolyne</Heading> and I am a frontend developer.</Heading>
+            <Button maxWidth="fit-content" backgroundColor="orange.300" marginTop={10} _hover={{backgroundColor: "orange.500", color: "white"}}>Download my CV</Button>
         </Box>
-        <Box display={{base: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex"}} alignItems="end" maxHeight={900}>
-            <Image src={MyPhoto} maxHeight={{base: "0", sm: "600", md: "700", lg:"800",xl: "900"}}></Image>
+        <Box display={{base: "none", sm: "none", md: "none", lg: "flex", xl: "flex"}} alignItems="end" maxHeight={900} paddingX={20}>
+            <Image src={MyPhoto} maxHeight={{base: "0", sm: "0", md: "700", lg:"2000",xl: "2000"}}></Image>
         </Box>
     </Flex>
   );

@@ -1,11 +1,11 @@
-import { HStack, List, ListItem} from "@chakra-ui/react";
+import { HStack, IconButton, List, ListItem, Flex} from "@chakra-ui/react";
 import { NavLink } from 'react-router-dom';
 import React from "react";
 
 function NavMobile() {
   return (
-    <HStack as="nav">
-      <List display="flex" justifyContent="space-between" minWidth={300} fontWeight={500}>
+    <Flex as="nav" display={{base: "initial", lg: "none", xl: "none", "2xl": "none"}}  fontWeight={500} backgroundColor="orange.200" borderBottom="orange.300">
+        <List spacing={5} margin={10} display="flex" flexDirection="column" alignItems="center" backgroundColor="orange.200">
         <ListItem _hover={{color: "orange.500"}}>
           <NavLink to="/">Home</NavLink>
         </ListItem>
@@ -18,8 +18,8 @@ function NavMobile() {
         <ListItem _hover={{color: "orange.500"}}>
           <NavLink to="portfolio">Portfolio</NavLink>
         </ListItem>
-      </List>
-    </HStack>
+        </List>
+    </Flex>
   );
 }
 
