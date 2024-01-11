@@ -1,14 +1,13 @@
 import React from "react";
-import { Image, Text, Heading, Card, CardBody, Stack, Center} from "@chakra-ui/react"
+import { Image, Text, Heading, Card, CardBody, Stack, Center} from "@chakra-ui/react";
 
 function PortfolioCard(props) {
   return (
     <>
     {props.cards.map((card) => (
     <Card
-    backgroundColor="orange.50"
-    _hover={{background: "orange.100",}}>
-        <CardBody key={card.id}>
+    backgroundColor="orange.50" _hover={{backgroundColor: "orange.100"}} h="100%" key={card.id}>
+        <CardBody>
             <Image src={card.photo}></Image>
             <Stack margin={2}>
                 <Center>

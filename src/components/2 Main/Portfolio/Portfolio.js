@@ -1,8 +1,22 @@
 import React from "react";
-import { Center, Heading, Grid, GridItem, Flex, Text, Box} from "@chakra-ui/react";
-import PortfolioCard from "./PortfolioCard"
+import { Center, Heading, Grid, GridItem, Flex, Text, Box, Icon, Card, CardBody, Image, Stack, IconButton} from "@chakra-ui/react";
+import PortfolioCard from "./PortfolioCard";
+import { BsFillPinAngleFill } from "react-icons/bs";
+import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import { useState } from "react";
 
 function Portfolio() {
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
+      };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
+      };
+
   const cards = [
     {
         id: 1,
@@ -45,16 +59,33 @@ function Portfolio() {
     <Flex as="article" flexDirection="column">
         <Center>
             <Box>
-                <Text align="center">My projects</Text>
+                <Text align="center"><Icon color="orange.300" as={BsFillPinAngleFill}></Icon> My projects</Text>
                 <Heading align="center">VISIT MY PORTFOLIO</Heading>
             </Box>
         </Center>
-        <Grid zIndex="-1" templateColumns='repeat(6, 1fr)' gap={10} padding={100} justifyContent="center">
+        <Grid zIndex="-1" templateColumns='repeat(6, 1fr)' gap="10" padding={{md:20}} justifyContent="center" display={{base: "none", sm: "none", md: "grid", lg: "grid", xl: "grid", "2xl": "grid"}}>
             {Array.from({ length: 6 }).map((_, index) => (
-            <GridItem key={index} colSpan={{ base: 6, lg: 3, xl: 2}}>
+            <GridItem key={index} colSpan={{ md: 3, lg: 3, xl: 2}}>
                 <PortfolioCard cards={[cards[index]]}/>
             </GridItem>
             ))}
+        </Grid>
+        <Grid templateColumns='repeat(6, 1fr)' paddingY="10" justifyContent="center" display={{base: "grid", sm: "grid", md: "none", lg: "none"}}>
+            <GridItem colSpan="6" display="flex" alignItems="center">
+             <IconButton icon={<ArrowLeftIcon />} onClick={handlePrev} color="orange.300" backgroundColor="transparent" margin={4}/>
+                <Card backgroundColor="orange.50" _hover={{background: "orange.100"}} h="60vh">
+                    <CardBody>
+                        <Image src={cards[currentIndex].photo}></Image>
+                        <Stack margin={2}>
+                            <Center>
+                                <Heading>{cards[currentIndex].name}</Heading>
+                            </Center>
+                            <Text margin={3} fontStyle="italic">{cards[currentIndex].description}</Text>
+                        </Stack>
+                    </CardBody>
+                </Card>
+                <IconButton icon={<ArrowRightIcon />} onClick={handleNext} color="orange.300" backgroundColor="transparent" margin={4}/>
+            </GridItem>
         </Grid>
     </Flex>
   );

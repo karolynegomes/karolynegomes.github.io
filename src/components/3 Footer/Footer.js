@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Flex, Heading, Text, List, ListItem, Grid, GridItem, Spacer} from "@chakra-ui/react";
+import { Flex, Heading, Text, List, ListItem, Grid, GridItem} from "@chakra-ui/react";
 import { PhoneIcon, Icon} from "@chakra-ui/icons";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -15,7 +15,7 @@ function Footer() {
         <Text color="white">At vero eos et accusamus et iusto odio dign ducimus qui blanditiis praesentium volup deleniti atque corrupti quos dolores et molestias excepturi sint occaecati.</Text>
         <Text color="white">karolynegomesdamota@gmail.com</Text>
       </GridItem>
-      <GridItem colSpan={{ base: 4, sm: 2, md: 1, lg: 1, xl: 1}}>
+      <GridItem colSpan={{ base: 4, sm: 2, md: 1, lg: 1, xl: 1}} display={{md: "flex", lg: "flex", xl: "flex", "2xl": "flex"}} flexDir="column" alignItems="center">
         <Heading size="md" marginBottom={5} color="white">Explore</Heading>
         <List display="flex" flexDirection="column">
           <ListItem color="white" _hover={{color: "orange.300"}}>
