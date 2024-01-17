@@ -56,24 +56,24 @@ function Portfolio() {
     }];
 
   return (
-    <Flex as="article" flexDirection="column">
+    <Flex as="article" id="portfolio" flexDirection="column">
         <Center>
             <Box>
                 <Text align="center"><Icon color="orange.300" as={BsFillPinAngleFill}></Icon> My projects</Text>
                 <Heading align="center">VISIT MY PORTFOLIO</Heading>
             </Box>
         </Center>
-        <Grid zIndex="-1" templateColumns='repeat(6, 1fr)' gap="10" padding={{md:20}} justifyContent="center" display={{base: "none", sm: "none", md: "grid", lg: "grid", xl: "grid", "2xl": "grid"}}>
+        <Grid templateColumns='repeat(6, 1fr)' gap="10" padding={{md:20}} justifyContent="center" display={{base: "none", sm: "none", md: "grid", lg: "grid", xl: "grid", "2xl": "grid"}} margin={70}>
             {Array.from({ length: 6 }).map((_, index) => (
             <GridItem key={index} colSpan={{ md: 3, lg: 3, xl: 2}}>
                 <PortfolioCard cards={[cards[index]]}/>
             </GridItem>
             ))}
         </Grid>
-        <Grid templateColumns='repeat(6, 1fr)' paddingY="10" justifyContent="center" display={{base: "grid", sm: "grid", md: "none", lg: "none"}}>
+        <Grid templateColumns='repeat(6, 1fr)' paddingY="10" justifyContent="center" display={{base: "grid", sm: "grid", md: "none", lg: "none"}} margin={10}>
             <GridItem colSpan="6" display="flex" alignItems="center">
              <IconButton icon={<ArrowLeftIcon />} onClick={handlePrev} color="orange.300" backgroundColor="transparent" margin={4}/>
-                <Card backgroundColor="orange.50" _hover={{background: "orange.100"}} h="60vh">
+                <Card backgroundColor="orange.50" _hover={{background: "orange.100"}} h="30vh">
                     <CardBody>
                         <Image src={cards[currentIndex].photo}></Image>
                         <Stack margin={2}>

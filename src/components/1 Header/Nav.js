@@ -1,22 +1,22 @@
 import { Flex, List, ListItem} from "@chakra-ui/react";
-import { NavLink } from 'react-router-dom';
 import React from "react";
+import { Link } from "react-scroll";
 
 function Nav() {
   return (
     <Flex as="nav" display={{base: "none", lg: "initial", xl: "initial", "2xl": "initial"}}>
       <List display="flex" justifyContent="space-between" minWidth={300} fontWeight={500}>
         <ListItem _hover={{color: "orange.500"}}>
-          <NavLink to="/">Home</NavLink>
+          <Link to="/" spy={true} smooth={true} offset={0} duration={300}>Home</Link>
         </ListItem>
         <ListItem _hover={{color: "orange.500"}}>
-          <NavLink to="about">About</NavLink>
+          <Link to="about" spy={true} smooth={true} offset={-50} duration={300}>About</Link>
         </ListItem>
         <ListItem _hover={{color: "orange.500"}}>
-          <NavLink to="resume">Resume</NavLink>
+          <Link to="resume" spy={true} smooth={true} offset={50} duration={300}>Resume</Link>
         </ListItem>
         <ListItem _hover={{color: "orange.500"}}>
-          <NavLink to="portfolio">Portfolio</NavLink>
+          <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>Portfolio</Link>
         </ListItem>
       </List>
     </Flex>
