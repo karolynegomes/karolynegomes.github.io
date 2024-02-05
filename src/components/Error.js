@@ -3,7 +3,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 
 function Error() {
   return (
-    <Flex>
+    <Flex h="90vh" justifyContent="center" alignItems="center">
         <Heading>Page not found</Heading>
     </Flex>
   );

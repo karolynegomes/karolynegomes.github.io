@@ -1,0 +1,75 @@
+
+
+
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+.photo1 {
+    animation: photo1 1s ease-in 0s infinite alternate-reverse;
+}
+
+@keyframes photo1 {
+    from {
+        transform: translateX(-30px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.stripe {
+    animation: stripe 2s ease-in 0s infinite alternate-reverse;
+}
+
+@keyframes stripe {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+.typewriter {
+    padding-right: 1px;
+    border-right: 2px solid black;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(17) 2s alternate-reverse infinite, cursor .4s step-end infinite alternate-reverse;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    to { width: 20ch}
+}
+
+nav {
+ font-size: x-large;
+}
+
+.icon {
+    transition: all 1.5s;
+    animation: rotateAnimation 1s linear infinite alternate; /* Continuous rotation */
+}
+
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(45deg);
+        ;
+    }
+}
+
+.navlink {
+    font-size: medium;
+}
