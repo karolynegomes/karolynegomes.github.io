@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Icon, Text, Image, Flex, Button } from "@chakra-ui/react";
+import { Heading, Text, Image, Flex, Button } from "@chakra-ui/react";
 import MyPhoto from "./../photos/myphotowithoutbackground.png"
 import Stripe from "../photos/stripe.png";
 import { Link } from "react-scroll";
@@ -36,7 +36,7 @@ function Hero() {
         <Flex flexDirection="column" justifyContent="space-between" alignItems="left" w={{base: "90%", lg: "70%"}} h="100%">
           <Flex flexDir="column" justifyContent="center" marginX={{base: "5", lg:"75", xl: "100", "2xl": "100"}} h="80%" marginY={{base: 0, lg: 5}}>
             <Flex>
-            <Text className="typewriter" zIndex={20} marginTop={10} marginLeft={3} fontSize={{base: "md", sm: "md", md: "lg", lg:"2xl"}} color="text.950" letterSpacing="2px">Nice to meet you!</Text>
+            <Text className="typewriter" zIndex={20} marginTop={10} marginLeft={2} fontSize={{base: "md", sm: "md", md: "lg", lg:"2xl"}} color="text.950" letterSpacing="2px">Nice to meet you!</Text>
             </Flex>
             <Heading zIndex={20} size={{base: "2xl", sm: "3xl", md: "3xl", lg:"3xl"}} color="text.950">My name is<Heading as="span" size={{base: "2xl", sm: "3xl", md: "3xl", lg:"3xl"}} bgGradient="linear(to-l, #eb984a, #ed4946)" bgClip="text" fontStyle="italic"> Karolyne</Heading><br/> and I am a Front-End developer.</Heading>
             <Text color="text.900" marginY={5} fontSize={{base: "lg", sm: "lg", md: "xl", lg:"3xl"}} display={{base: "flex", lg:"flex",xl: "flex", "2xl": "flex"}}>Thriving on turning ideas into reality. Just let me know what you need, and together we can bring your vision to life!</Text>

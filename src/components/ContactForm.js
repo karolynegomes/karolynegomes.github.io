@@ -1,5 +1,5 @@
 import React from "react";
- import { Flex, Heading, FormLabel, FormControl, Input, Textarea, Button, Text, Icon, Link, Box } from "@chakra-ui/react";
+ import { Flex, Heading, FormLabel, FormControl, Input, Textarea, Button, Text, Icon, Link } from "@chakra-ui/react";
  import { EmailIcon } from "@chakra-ui/icons";
  import { BsFillPinAngleFill } from "react-icons/bs";
 import Wave from 'react-wavify'
@@ -53,7 +53,7 @@ function ContactForm() {
                 </Flex>
     </Flex>
 </Flex>
-<Wave fill="#121007" paused={false} style={{ display: 'flex', height: "5vh", backgroundColor: "#f5cba3"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
+<Wave fill="#121007" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#f5cba3"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
 </Flex>
   );
 }
