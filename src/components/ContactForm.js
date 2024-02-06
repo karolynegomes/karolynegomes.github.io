@@ -8,7 +8,6 @@ function ContactForm() {
 
   return (
     <Flex flexDir="column">
-    <Wave fill="#f5cba3" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#fae5d1"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 5}}/>
   <Flex as="article" id="contact" flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center">
     <Flex w="100%" marginY={10} flexDir="column" alignItems="center" maxWidth={1500}>
         <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
@@ -17,7 +16,7 @@ function ContactForm() {
                     <Flex paddingX={{base: 1, sm: 10}} borderRadius={5}>
                         <Flex flexDir="column" alignItems="center" padding={2} marginY={5} borderRadius={5} w="100%">
                             <Text>If you want to get in touch, talk about a project collaboration or just connect, fill up form below or send an email to:</Text><br/>
-                            <Link href="mailto:karolynegomesdamota@gmail.com" color="primary.600" _hover={{ color: "accent.500"}}><b>karolynegomesdamota@gmail.com</b></Link>
+                            <Link href="mailto:karolynegomesdamota@gmail.com" color="text.950" _hover={{ color: "accent.500"}}><b>karolynegomesdamota@gmail.com</b></Link>
                         </Flex>
                     </Flex>
                     <Flex flexDir="column" paddingX={{base: 1, sm: 10}}>
@@ -54,6 +53,7 @@ function ContactForm() {
                 </Flex>
     </Flex>
 </Flex>
+<Wave fill="#121007" paused={false} style={{ display: 'flex', height: "5vh", backgroundColor: "#f5cba3"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
 </Flex>
   );
 }

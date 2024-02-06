@@ -10,13 +10,13 @@ function NavMobile() {
           <Link to="/" spy={true} smooth={true} offset={0} duration={300}>Home</Link>
         </ListItem>
         <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
-          <Link to="about" spy={true} smooth={true} offset={-50} duration={300}>About</Link>
+          <Link to="about" spy={true} smooth={true} offset={-300} duration={300}>About</Link>
         </ListItem>
         <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
-          <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>Portfolio</Link>
+          <Link to="portfolio" spy={true} smooth={true} offset={-375} duration={300}>Portfolio</Link>
         </ListItem>
         <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
-          <Link to="contact" spy={true} smooth={true} offset={50} duration={600}>Contact</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-400} duration={600}>Contact</Link>
         </ListItem>
         </List>
     </Flex>

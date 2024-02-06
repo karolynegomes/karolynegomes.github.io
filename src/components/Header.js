@@ -5,6 +5,8 @@ import NavMobile from "./NavMobile";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
+
 
 function Header({ isHamburgerMenuOpen, toggleHamburgerMenu }) {
   const [display, changeDisplay] = useState("none")

@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Error from "./components/Error";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 import ContactForm from "./components/ContactForm";
+import "./App.css";
 
 function App() {
 

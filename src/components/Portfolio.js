@@ -63,7 +63,6 @@ function Portfolio() {
 
   return (
     <Flex flexDir="column">
-    <Wave fill="#fae5d1" paused={false} style={{ display: 'flex', height: "8vh", backgroundColor: "#fcf2e8"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 5}}/>
     <Flex as="article" id="portfolio" justifyContent="center" bg="primary.100" paddingTop={70}>
         <Flex flexDirection="column" maxWidth={1500}>
         <Center>
@@ -82,6 +81,7 @@ function Portfolio() {
         </Grid>
         </Flex>
     </Flex>
+    <Wave fill="#f5cba3" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#fae5d1"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
     </Flex>
   );
 }

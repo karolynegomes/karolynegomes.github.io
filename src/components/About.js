@@ -3,11 +3,12 @@ import { Flex, Text, Heading, Icon, Box, Tabs, TabList, Tab, TabPanels, TabPanel
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { FaHtml5, FaCss3Alt, FaReact, FaFigma, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import Wave from 'react-wavify'
 
 function About() {
 
   return (
-     <Flex as="article" id="about" justifyContent="center" bg="primary.50">
+     <Flex as="article" id="about" alignItems="center" flexDir="column" bg="primary.50">
       <Flex alignItems="center" flexDirection="column" padding={{base: "10", sm: "20"}} paddingY={{base: "10", sm: "20"}} maxWidth={1500}>
           <Flex flexDirection="column" alignItems="left">
             <Text><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> About me</Text>
@@ -95,6 +96,7 @@ function About() {
             <Icon className="icon" color="primary.300" _hover={{color: "accent.400"}} boxSize={{base: 5, sm: 30, lg: 50}} as={FaFigma}></Icon>
         </Flex>
       </Flex>
+      <Wave fill="#fae5d1" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#fcf2e8"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
     </Flex>
   );
 }
