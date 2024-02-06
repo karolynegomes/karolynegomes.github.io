@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/karolynegomes.github.io/static/css/main.d7074d35.css",
+    "main.js": "/karolynegomes.github.io/static/js/main.8625edfb.js",
+    "static/media/myphotowithoutbackground.png": "/karolynegomes.github.io/static/media/myphotowithoutbackground.e48a1fc3f7c41f0ef290.png",
+    "index.html": "/karolynegomes.github.io/index.html",
+    "main.d7074d35.css.map": "/karolynegomes.github.io/static/css/main.d7074d35.css.map",
+    "main.8625edfb.js.map": "/karolynegomes.github.io/static/js/main.8625edfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7074d35.css",
+    "static/js/main.8625edfb.js"
+  ]
+}
