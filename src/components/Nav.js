@@ -1,7 +1,6 @@
 import { Flex, List, ListItem} from "@chakra-ui/react";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 
 function Nav() {
   return (

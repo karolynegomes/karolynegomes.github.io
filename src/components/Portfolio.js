@@ -7,16 +7,6 @@ import Wave from 'react-wavify'
 
 function Portfolio() {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
-      };
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
-      };
-
   const cards = [
     {
         id: 1,
