@@ -26,7 +26,7 @@ function About() {
                 <TabPanels>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box bg="secondary.100">
+                      <Box as="span" bg="secondary.100">
                         I'm Karolyne, a front-end developer with a passion for crafting digital experiences that seamlessly blend utility, beauty, and organization. Born in Brazil, raised in Spain, and now calling Finland home for the past 2~ years, I speak Portuguese, Spanish, and English – with Finnish soon to join the mix.<br/><br/>
                         Despite having a career focused primarily on customer service, I've found that the skills acquired in that field - teamwork, communication, and understanding of customer needs - seamlessly translate into the world of development.
                       </Box>

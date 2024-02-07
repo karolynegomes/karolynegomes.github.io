@@ -55,7 +55,7 @@ html {
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(17) 2s alternate-reverse infinite, cursor .4s step-end infinite alternate-reverse;
+    animation: typing 6s steps(17) 10s alternate-reverse infinite, cursor .1s step-end infinite alternate-reverse;
 }
 
 @keyframes cursor {
@@ -63,7 +63,15 @@ html {
 }
 
 @keyframes typing {
-    to { width: 20ch}
+    0% { width: 0ch}
+
+    25% { width: 5ch}
+
+    50% { width: 9ch}
+
+    75% { width: 13ch}
+
+    100% { width: 18ch}
 }
 
 nav {
