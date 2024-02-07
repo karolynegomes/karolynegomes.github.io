@@ -5,17 +5,17 @@ import React from "react";
 function NavMobile() {
   return (
     <Flex as="nav" display={{base: "initial", lg: "none", xl: "none", "2xl": "none"}} fontWeight={500}>
-        <List display="flex" flexDirection="column" alignItems="center" bg="secondary.100" w="100vw" paddingY={1}>
-        <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
+        <List display="flex" flexDirection="column" alignItems="center">
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
           <Link to="/" spy={true} smooth={true} offset={0} duration={300}>Home</Link>
         </ListItem>
-        <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
           <Link to="about" spy={true} smooth={true} offset={-300} duration={300}>About</Link>
         </ListItem>
-        <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
           <Link to="portfolio" spy={true} smooth={true} offset={-375} duration={300}>Portfolio</Link>
         </ListItem>
-        <ListItem bgColor="transparent" _hover={{bgColor: "secondary.200", borderRadius: 50 }} display="flex" justifyContent="center" alignItems="center" w="80vw" h="6vh" >
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
           <Link to="contact" spy={true} smooth={true} offset={-400} duration={600}>Contact</Link>
         </ListItem>
         </List>
