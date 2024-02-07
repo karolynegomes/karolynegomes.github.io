@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
-import { Heading, Flex, IconButton, Drawer, useDisclosure, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Input, DrawerFooter, Button } from "@chakra-ui/react";
+import { Heading, Flex, IconButton, Drawer, useDisclosure, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerBody } from "@chakra-ui/react";
 import NavMobile from "./NavMobile";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link as RouterLink } from "react-router-dom";
 
 
@@ -10,6 +10,10 @@ function Header() {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
+
+  const handleLinkClick = () => {
+    onClose();
+  }
 
   return (
     <Flex as="header" flexDir="column" justifyContent="center" alignItems="center" position="sticky" top="0" bgColor="secondary.50" h="10vh" width="100%" zIndex={999}>
@@ -27,7 +31,7 @@ function Header() {
           <DrawerContent bgColor="secondary.50">
             <DrawerCloseButton h="10vh"paddingX={{base: "5vw", "2xl": "1vw"}} size="xl"/>
             <DrawerBody paddingY={120}>
-              <NavMobile/>
+              <NavMobile onLinkClick={handleLinkClick}/>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

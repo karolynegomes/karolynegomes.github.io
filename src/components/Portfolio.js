@@ -2,7 +2,6 @@ import React from "react";
 import { Center, Heading, Grid, GridItem, Flex, Text, Icon } from "@chakra-ui/react";
 import PortfolioCard from "./PortfolioCard";
 import { BsFillPinAngleFill } from "react-icons/bs";
-import { useState } from "react";
 import Wave from 'react-wavify'
 
 function Portfolio() {
