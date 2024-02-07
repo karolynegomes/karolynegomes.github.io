@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <Flex as="nav"w="30%" display={{base: "none", lg: "initial", xl: "initial", "2xl": "initial"}}>
+    <Flex as="nav" w="30%" display={{base: "none", lg: "initial", xl: "initial", "2xl": "initial"}}>
       <List display="flex" justifyContent="space-between" minWidth={300} fontWeight={500}>
         <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}}>
           <RouterLink className="navlink" to="/">Home</RouterLink>

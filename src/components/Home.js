@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
     <ScrollRestoration/>
-    <Flex flexDirection="column" width="100%">
+    <Flex as="main" flexDirection="column" width="100%">
       <Hero/>
       <About/>
       <Portfolio/>

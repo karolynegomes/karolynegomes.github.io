@@ -13,17 +13,17 @@ function NavMobile({onLinkClick}) {
   return (
     <Flex as="nav" display={{base: "initial", lg: "none", xl: "none", "2xl": "none"}} fontWeight={500}>
         <List display="flex" flexDirection="column" alignItems="center">
-        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
-          <Link to="/" onClick={handleLinkClick} spy={true} smooth={true} offset={0} duration={300}>Home</Link>
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
+          <Link to="/" onClick={handleLinkClick} spy={true} smooth={true} offset={0} duration={1000}>Home</Link>
         </ListItem>
-        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
-          <Link to="about" onClick={handleLinkClick} spy={true} smooth={true} offset={-300} duration={300}>About</Link>
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
+          <Link to="about" onClick={handleLinkClick} spy={true} smooth={true} offset={-100} duration={1000}>About</Link>
         </ListItem>
-        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
-          <Link to="portfolio" onClick={handleLinkClick} spy={true} smooth={true} offset={-375} duration={300}>Portfolio</Link>
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
+          <Link to="portfolio" onClick={handleLinkClick} spy={true} smooth={true} offset={-200} duration={1000}>Portfolio</Link>
         </ListItem>
-        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" h="6vh" >
-          <Link to="contact" onClick={handleLinkClick} spy={true} smooth={true} offset={-400} duration={600}>Contact</Link>
+        <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
+          <Link to="contact" onClick={handleLinkClick} spy={true} smooth={true} offset={-200} duration={1000}>Contact</Link>
         </ListItem>
         </List>
     </Flex>

@@ -18,18 +18,18 @@ function Header() {
   return (
     <Flex as="header" flexDir="column" justifyContent="center" alignItems="center" position="sticky" top="0" bgColor="secondary.50" h="10vh" width="100%" zIndex={999}>
       <Flex w="100%" maxWidth={1500} justifyContent="space-between" alignItems="center" paddingX={{base: "5vw", "2xl": "1vw"}} position="absolute" top="0">
-      <Flex height="10vh" alignItems="center">
+      <Flex as="figure" height="10vh" alignItems="center">
       <RouterLink className="navlink" to="/"><Heading size={{base: "lg", lg: "xl"}} color="text.950">karolyne<Heading size={{base: "lg", lg: "xl"}} bgGradient="linear(to-l, #eb984a, #ed4946)" bgClip="text" as="span">.dev</Heading></Heading></RouterLink>
       </Flex>
       <Nav/>
-      <Flex h="10vh" alignItems="center" display={{base: "flex", lg: "none", xl: "none", "2xl":"none"}}>
+      <Flex h="10vh" alignItems="center" display={{base: "flex", lg: "none"}}>
         <IconButton display={{base: "flex", lg: "none"}} color="text.950" bg="transparent" onClick={onOpen} icon={<HamburgerIcon w={8} h={8}/>} zIndex={999}/>
       </Flex>
       </Flex>
         <Drawer isOpen={isOpen} placement='right' onClose={onClose} finalFocusRef={btnRef}>
           <DrawerOverlay/>
           <DrawerContent bgColor="secondary.50">
-            <DrawerCloseButton h="10vh"paddingX={{base: "5vw", "2xl": "1vw"}} size="xl"/>
+            <DrawerCloseButton h="10vh" paddingX={{base: "5vw", "2xl": "1vw"}} size="xl"/>
             <DrawerBody paddingY={120}>
               <NavMobile onLinkClick={handleLinkClick}/>
             </DrawerBody>

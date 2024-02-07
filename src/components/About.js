@@ -7,6 +7,21 @@ import Wave from 'react-wavify'
 
 function About() {
 
+    const scrollbarStyles = {
+      '&::-webkit-scrollbar': {
+        width: '12px',
+      },
+      '&::-webkit-scrollbar-track': {
+        borderRadius: 5,
+        background: '#f5cba3', // Set your desired background color
+      },
+      '&::-webkit-scrollbar-thumb': {
+        borderRadius: 5,
+        background: 'd95b59', // Set your desired thumb color
+        borderRadius: '12px',
+      },
+    };
+
   return (
      <Flex as="article" id="about" alignItems="center" flexDir="column" bg="primary.50">
       <Flex alignItems="center" flexDirection="column" padding={{base: "10", sm: "20"}} paddingY={{base: "10", sm: "20"}} maxWidth={1500}>
@@ -26,7 +41,7 @@ function About() {
                 <TabPanels>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box bg="secondary.100">
                         I'm Karolyne, a front-end developer with a passion for crafting digital experiences that seamlessly blend utility, beauty, and organization. Born in Brazil, raised in Spain, and now calling Finland home for the past 2~ years, I speak Portuguese, Spanish, and English – with Finnish soon to join the mix.<br/><br/>
                         Despite having a career focused primarily on customer service, I've found that the skills acquired in that field - teamwork, communication, and understanding of customer needs - seamlessly translate into the world of development.
                       </Box>
@@ -34,7 +49,7 @@ function About() {
                   </TabPanel>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box as="span" bg="secondary.50">
                         My journey into front-end development is a bit unconventional. After exploring diverse fields like law, economics, and even a degree in Criminology, I stumbled upon the captivating world of front-end development. What drew me in was the opportunity to create things that are not only functional but also beautifully organized – a reflection of my life's obsession. <br/><br/>
                         I embarked on my front-end development path through the Meta Front-end Specialization course. Along the way, I delved into HTML5, CSS, and JavaScript, developing my skills in version control and GitHub as well. I also explored Basic and Advanced React, acquainting myself with Chakra UI. To round out my skill set, I immersed myself in UX and UI design, working with Figma to craft wireframes and prototypes.
                       </Box>
@@ -42,13 +57,13 @@ function About() {
                   </TabPanel>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box as="span" bg="secondary.50">
                         I embarked on my front-end development path through the Meta Front-end Specialization course. Along the way, I delved into HTML5, CSS, and JavaScript, developing my skills in version control and GitHub as well. I also explored Basic and Advanced React, acquainting myself with Chakra UI. To round out my skill set, I immersed myself in UX and UI design, working with Figma to craft wireframes and prototypes.</Box>
                     </Text>
                   </TabPanel>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box as="span" bg="secondary.50">
                         Despite having a career focused primarily on customer service, I've found that the skills acquired in that field - teamwork, communication, and understanding of customer needs - seamlessly translate into the world of development.<br/><br/>
                         I am actively exploring opportunities to acquire new skills, advance my knowledge, make meaningful contributions, and engage in collaborative projects.
                       </Box>
@@ -56,7 +71,7 @@ function About() {
                   </TabPanel>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box as="span" bg="secondary.50">
                         I am actively exploring opportunities to acquire new skills, advance my knowledge, make meaningful contributions, and engage in collaborative projects.<br/><br/>
                         I invite you to explore my portfolio. I would be genuinely grateful to receive your feedback through the form below, as this will be a fantastic way to refine my coding skills. Whether you're here for collaboration opportunities or just to connect, feel free to reach out – I'm ready for the next exciting chapter in my front-end development journey! 🚀
                       </Box>
@@ -64,14 +79,14 @@ function About() {
                   </TabPanel>
                   <TabPanel>
                     <Text _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                      <Box as="span" bg="secondary.50">
                         Beyond coding, here's a glimpse into who I am: I love working out, exploring nature, enjoying time with pets and embracing the foodie life. And whenever it's time to relax, catch me painting canvases for that extra splash of creativity.
                       </Box>
                     </Text>
                   </TabPanel>
                   <TabPanel>
-                    <Text h={{base: "50vh", lg: "fit-content"}} overflow="auto" _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
-                      <Box as="span" bg="secondary.100">
+                    <Text css={scrollbarStyles} h={{base: "50vh", lg: "fit-content"}} overflow="auto" _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
+                      <Box as="span" bg="secondary.50">
                         Hi there! <br/><br/>
                         I'm Karolyne, a front-end developer with a passion for crafting digital experiences that seamlessly blend utility, beauty, and organization. Born in Brazil, raised in Spain, and now calling Finland home for the past 2~ years, I speak Portuguese, Spanish, and English – with Finnish soon to join the mix. <br/><br/>
                         My journey into front-end development is a bit unconventional. After exploring diverse fields like law, economics, and even a degree in Criminology, I stumbled upon the captivating world of front-end development. What drew me in was the opportunity to create things that are not only functional but also beautifully organized – a reflection of my life's obsession. <br/><br/>
@@ -87,7 +102,7 @@ function About() {
                 </TabPanels>
             </Tabs>
           </Flex>
-          <Flex justifyContent="space-between" w="80%" marginTop={{base: 5, lg: 10}}>
+          <Flex as="figure" justifyContent="space-between" w="80%" marginTop={{base: 5, lg: 10}}>
             <Icon className="icon" color="primary.300" _hover={{color: "accent.400"}} boxSize={{base: 5, sm: 30, lg: 50}} as={FaHtml5}></Icon>
             <Icon className="icon" color="primary.300" _hover={{color: "accent.400"}} boxSize={{base: 5, sm: 30, lg: 50}} as={FaCss3Alt}></Icon>
             <Icon className="icon" color="primary.300" _hover={{color: "accent.400"}} boxSize={{base: 5, sm: 30, lg: 50}} as={IoLogoJavascript}></Icon>

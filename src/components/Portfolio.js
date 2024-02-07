@@ -51,17 +51,17 @@ function Portfolio() {
     }];
 
   return (
-    <Flex flexDir="column">
-    <Flex as="article" id="portfolio" justifyContent="center" bg="primary.100" paddingTop={70}>
+    <Flex flexDir="column" id="portfolio" as="article">
+    <Flex justifyContent="center" bg="primary.100" paddingTop={70}>
         <Flex flexDirection="column" maxWidth={1500}>
-        <Center>
+        <Center as="section">
             <Flex flexDir="column" alignItems="center">
                 <Text align="center"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> My projects</Text>
                 <Heading align="center">VISIT MY PORTFOLIO</Heading>
                 <Text marginTop={5} w="80%">Every project is a fresh canvas, an opportunity to craft solutions, navigate challenges, and unveil the true potential of creativity and determination.</Text>
             </Flex>
         </Center>
-        <Grid templateColumns='repeat(6, 1fr)' gap="10" padding={{base: 10, md: 20}} justifyContent="center">
+        <Grid  as="section" templateColumns='repeat(6, 1fr)' gap="10" padding={{base: 10, md: 20}} justifyContent="center">
             {Array.from({ length: 6 }).map((_, index) => (
             <GridItem key={index} colSpan={{ base: 6, md: 3, lg: 3, xl: 2}}>
                 <PortfolioCard cards={[cards[index]]}/>

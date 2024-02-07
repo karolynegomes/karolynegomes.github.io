@@ -5,7 +5,23 @@
 html {
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
+
 }
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent; /* Set your desired background color */
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #d95b59; /* Set your desired thumb color */
+  }
+
 
 .photo1 {
     animation: photo1 1s ease-in 0s infinite alternate-reverse;

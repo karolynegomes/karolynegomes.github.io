@@ -14,9 +14,7 @@ function HomeLayout() {
   return (
     <Flex id="/" flexDirection="column">
         <Header isHamburgerMenuOpen={isHamburgerMenuOpen} toggleHamburgerMenu={toggleHamburgerMenu}/>
-        <main>
-          <Outlet isHamburgerMenuOpen={isHamburgerMenuOpen}/>
-        </main>
+        <Outlet isHamburgerMenuOpen={isHamburgerMenuOpen}/>
         <Footer/>
     </Flex>
   );

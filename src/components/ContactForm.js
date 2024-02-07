@@ -7,13 +7,15 @@ import Wave from 'react-wavify'
 function ContactForm() {
 
   return (
-    <Flex flexDir="column">
-  <Flex as="article" id="contact" flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center">
+    <Flex flexDir="column" as="article" id="contact">
+  <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center">
     <Flex w="100%" marginY={10} flexDir="column" alignItems="center" maxWidth={1500}>
+        <Flex flexDir="column" alignItems="center">
         <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
         <Heading size="lg" color="text.950">GET IN TOUCH TODAY!</Heading>
+        </Flex>
                 <Flex flexDir="column" padding={5} w="100%">
-                    <Flex paddingX={{base: 1, sm: 10}} borderRadius={5}>
+                    <Flex as="section" paddingX={{base: 1, sm: 10}} borderRadius={5}>
                         <Flex flexDir="column" alignItems="center" padding={2} marginY={5} borderRadius={5} w="100%">
                             <Text>If you want to get in touch, talk about a project collaboration or just connect, fill up form below or send an email to:</Text><br/>
                             <Link href="mailto:karolynegomesdamota@gmail.com" color="text.950" _hover={{ color: "accent.500"}}><b>karolynegomesdamota@gmail.com</b></Link>
