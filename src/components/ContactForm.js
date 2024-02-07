@@ -87,7 +87,7 @@ function ContactForm() {
                                 </Button>
                             </Flex>
                             {(formStatus === 'success' || formStatus === 'error') && (
-                                <Alert status={formStatus === 'success' ? 'success' : 'error'} borderRadius={5}>
+                                <Alert status={formStatus === 'success' ? 'success' : 'error'} borderRadius={10}>
                                     <AlertIcon />
                                     {formStatus === 'success' ? "Message sent. I will get back to you very soon!" : "There was an error processing your message. Please try again or send me an email to karolynegomesdamota@gmail"}
                                     <CloseButton alignSelf='flex-start' position='relative' right={-1} top={-1} onClick={closeAlert}/>
