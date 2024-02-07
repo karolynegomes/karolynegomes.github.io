@@ -7,21 +7,6 @@ import Wave from 'react-wavify'
 
 function About() {
 
-    const scrollbarStyles = {
-      '&::-webkit-scrollbar': {
-        width: '12px',
-      },
-      '&::-webkit-scrollbar-track': {
-        borderRadius: 5,
-        background: '#f5cba3', // Set your desired background color
-      },
-      '&::-webkit-scrollbar-thumb': {
-        borderRadius: 5,
-        background: 'd95b59', // Set your desired thumb color
-        borderRadius: '12px',
-      },
-    };
-
   return (
      <Flex as="article" id="about" alignItems="center" flexDir="column" bg="primary.50">
       <Flex alignItems="center" flexDirection="column" padding={{base: "10", sm: "20"}} paddingY={{base: "10", sm: "20"}} maxWidth={1500}>
@@ -85,7 +70,7 @@ function About() {
                     </Text>
                   </TabPanel>
                   <TabPanel>
-                    <Text css={scrollbarStyles} h={{base: "50vh", lg: "fit-content"}} overflow="auto" _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
+                    <Text h={{base: "50vh", lg: "fit-content"}} overflow="auto" _after={{content: '""', position: "absolute", bottom: 0, left: 5, width: "90%", height: "1px", background:"primary.300", filter: "blur(1px)"}}>
                       <Box as="span" bg="secondary.50">
                         Hi there! <br/><br/>
                         I'm Karolyne, a front-end developer with a passion for crafting digital experiences that seamlessly blend utility, beauty, and organization. Born in Brazil, raised in Spain, and now calling Finland home for the past 2~ years, I speak Portuguese, Spanish, and English – with Finnish soon to join the mix. <br/><br/>
