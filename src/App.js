@@ -1,9 +1,9 @@
 import HomeLayout from "./pages/HomeLayout";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Project from "./components/Project";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Project from "./components/Portfolio/Project";
 import Error from "./components/Error";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 import ContactForm from "./components/ContactForm";

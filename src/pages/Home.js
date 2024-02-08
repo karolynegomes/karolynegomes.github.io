@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "./Hero";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import ContactForm from "./ContactForm";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Portfolio from "../components/Portfolio/Portfolio";
+import ContactForm from "../components/ContactForm";
 import { Flex } from "@chakra-ui/react";
 import { ScrollRestoration } from "react-router-dom";
 
