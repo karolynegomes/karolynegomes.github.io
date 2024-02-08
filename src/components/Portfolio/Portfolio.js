@@ -55,8 +55,8 @@ function Portfolio() {
     <>
     <ScrollRestoration/>
         <Flex flexDir="column" id="portfolio" as="article">
-            <Flex justifyContent="center" bg="primary.100" paddingTop={70} minH="80vh" >
-                <Flex flexDirection="column" maxWidth={1500}>
+            <Flex justifyContent="center" bg="primary.100" minH="80vh" >
+                <Flex flexDirection="column" maxWidth={1500} paddingY={{base: "10", sm: "20"}}>
                 <Center as="section">
                     <Flex flexDir="column" alignItems="center">
                         <Text align="center"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> My projects</Text>
