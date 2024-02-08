@@ -1,6 +1,6 @@
 import { List, ListItem, Flex} from "@chakra-ui/react";
 import React from "react";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavMobile({onLinkClick}) {
 
@@ -14,16 +14,16 @@ function NavMobile({onLinkClick}) {
     <Flex as="nav" display={{base: "initial", lg: "none", xl: "none", "2xl": "none"}} fontWeight={500}>
         <List display="flex" flexDirection="column" alignItems="center">
         <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
-          <RouterLink className="navlink" to="/" onClick={handleLinkClick}>Home</RouterLink>
+          <NavLink className="navlink" to="/" onClick={handleLinkClick}>Home</NavLink>
         </ListItem>
         <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
-          <RouterLink className="navlink" to="about" onClick={handleLinkClick}>About</RouterLink>
+          <NavLink className="navlink" to="about" onClick={handleLinkClick}>About</NavLink>
         </ListItem>
         <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
-          <RouterLink className="navlink" to="portfolio" onClick={handleLinkClick}>Portfolio</RouterLink>
+          <NavLink className="navlink" to="portfolio" onClick={handleLinkClick}>Portfolio</NavLink>
         </ListItem>
         <ListItem color="text.950" _hover={{bgGradient: "linear(to-l, #eb984a, #ed4946)", bgClip:"text"}} display="flex" justifyContent="center" alignItems="center" marginY={5}>
-        <RouterLink className="navlink" to="contact" onClick={handleLinkClick}>Contact</RouterLink>
+          <NavLink className="navlink" to="contact" onClick={handleLinkClick}>Contact</NavLink>
         </ListItem>
         </List>
     </Flex>
