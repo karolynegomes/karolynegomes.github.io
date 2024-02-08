@@ -7,7 +7,7 @@ function Project() {
   return (
     <>
       <ScrollRestoration/>
-        <Flex id="project" as="article" h="100vh" justifyContent="center">
+        <Flex id="project" as="article" minH="80vh" justifyContent="center">
           <Flex w="100%" flexDir="column" alignItems="center" justifyContent="center" maxWidth={1500}>
           <Heading>Project coming soon...</Heading>
           <Spinner color="accent.300" marginY={10}/>

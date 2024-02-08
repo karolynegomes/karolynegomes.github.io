@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       <ScrollRestoration/>
-        <Flex as="article" id="about" alignItems="center" flexDir="column" bg="primary.50">
+        <Flex as="article" id="about" alignItems="center" flexDir="column" bg="primary.50" minH="80vh">
           <Flex alignItems="center" flexDirection="column" padding={{base: "10", sm: "20"}} paddingY={{base: "10", sm: "20"}} maxWidth={1500}>
               <Flex flexDirection="column" alignItems="left">
                 <Text><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> About me</Text>

@@ -45,7 +45,7 @@ function ContactForm() {
     <>
         <ScrollRestoration/>
             <Flex flexDir="column" as="article" id="contact">
-                <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center">
+                <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center" minH="80vh">
                     <Flex w="100%" marginY={10} flexDir="column" alignItems="center" maxWidth={1500}>
                         <Flex flexDir="column" alignItems="center">
                             <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
