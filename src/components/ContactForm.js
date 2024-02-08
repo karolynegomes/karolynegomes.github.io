@@ -62,27 +62,27 @@ function ContactForm() {
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Name</FormLabel>
-                                        <Input type="text" name="user_name" placeholder="Type your name here" variant='filled' backgroundColor="secondary.50"></Input>
+                                        <Input type="text" name="user_name" placeholder="Type your name here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Email address</FormLabel>
-                                        <Input type="email" name="user_email" placeholder="example@email.com" variant='filled' backgroundColor="secondary.50"></Input>
+                                        <Input type="email" name="user_email" placeholder="example@email.com" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}}>
                                         <FormLabel>Phone number</FormLabel>
-                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" variant='filled' backgroundColor="secondary.50"></Input>
+                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Subject</FormLabel>
-                                        <Input type="text" name="user_subject" placeholder="Type the subject here" variant='filled' backgroundColor="secondary.50"></Input>
+                                        <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} flexDir={{base: "column", lg: "row"}}>
                                         <FormLabel>Message</FormLabel>
-                                        <Textarea type="message" name="message" placeholder="Type your message here" variant='filled' backgroundColor="secondary.50"></Textarea>
+                                        <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Textarea>
                                     </FormControl>
                                     <Flex justifyContent="center" alignItems="end">
                                         <Button type="submit" margin={5} maxWidth="fit-content" backgroundColor="primary.300" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}} leftIcon={<EmailIcon />} variant='solid' isLoading={loading}>
