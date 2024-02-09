@@ -1,8 +1,7 @@
 import { React, useRef, useState } from 'react';
-import { Flex, Heading, FormLabel, FormControl, Input, Textarea, Button, Text, Icon, Link, Alert, AlertIcon, Spinner, CloseButton, useDisclosure} from "@chakra-ui/react";
+import { Flex, Heading, FormLabel, FormControl, Input, Textarea, Button, Text, Icon, Link, Alert, AlertIcon, Spinner, CloseButton, FormHelperText, FormErrorMessage } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { BsFillPinAngleFill } from "react-icons/bs";
-import Wave from 'react-wavify';
 import emailjs from '@emailjs/browser';
 import { ScrollRestoration } from "react-router-dom";
 
@@ -16,6 +15,9 @@ function ContactForm() {
         setFormStatus(null);
         setLoading(false);
       };
+
+    const [input, setInput] = useState('')
+    const isError = input === ''
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -44,8 +46,8 @@ function ContactForm() {
 
     <>
         <ScrollRestoration/>
-            <Flex flexDir="column" as="article" id="contact">
-                <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center" minH="80vh" classname="contactstyle">
+            <Flex flexDir="column" as="article" id="contact" backgroundColor="primary.200">
+                <Flex flexDir="column" width="100%" alignItems="center" minH="80vh" justifyContent="center">
                     <Flex w="100%"  flexDir="column" alignItems="center" maxWidth={1500} paddingY={{base: "10", sm: "20"}}>
                         <Flex flexDir="column" alignItems="center">
                             <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
@@ -62,27 +64,27 @@ function ContactForm() {
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Name</FormLabel>
-                                        <Input type="text" name="user_name" placeholder="Type your name here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="text" name="user_name" placeholder="Type your name here" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Input>
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Email address</FormLabel>
-                                        <Input type="email" name="user_email" placeholder="example@email.com" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="email" name="user_email" placeholder="example@email.com" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}}>
                                         <FormLabel>Phone number</FormLabel>
-                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Input>
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Subject</FormLabel>
-                                        <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} flexDir={{base: "column", lg: "row"}}>
                                         <FormLabel>Message</FormLabel>
-                                        <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Textarea>
+                                        <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Textarea>
                                     </FormControl>
                                     <Flex justifyContent="center" alignItems="end">
                                         <Button type="submit" margin={5} maxWidth="fit-content" backgroundColor="primary.300" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}} leftIcon={<EmailIcon />} variant='solid' isLoading={loading}>

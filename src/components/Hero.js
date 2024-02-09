@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 function downloadCV() {
 
   // Path or URL of your PDF document
-  const pdfUrl = process.env.PUBLIC_URL + "/Karolyne_Gomes_Resume.PDF"
+  const pdfUrl = process.env.PUBLIC_URL + "/Karolyne_Gomes_da_Mota_Frontend_Developer.pdf"
 
   // Anchor element
   const a = document.createElement("a");
@@ -16,7 +16,7 @@ function downloadCV() {
   a.href = pdfUrl;
 
   // Set the download attribute with the desired file name
-  a.download = "Karolyne_Gomes_da_Mota_CV.pdf";
+  a.download = "Karolyne_Gomes_da_Mota_Frontend_Developer.pdf";
 
   // Append the anchor to the body
   document.body.appendChild(a);
