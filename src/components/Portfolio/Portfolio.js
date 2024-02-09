@@ -73,7 +73,6 @@ function Portfolio() {
                 </Grid>
                 </Flex>
             </Flex>
-            <Wave fill="#f5cba3" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#fae5d1"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
         </Flex>
   </>
   );

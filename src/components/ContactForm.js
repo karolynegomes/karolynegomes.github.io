@@ -45,8 +45,8 @@ function ContactForm() {
     <>
         <ScrollRestoration/>
             <Flex flexDir="column" as="article" id="contact">
-                <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center" minH="80vh">
-                    <Flex w="100%" paddingY={{base: "10", sm: "20"}} flexDir="column" alignItems="center" maxWidth={1500}>
+                <Flex flexDir="column" backgroundColor="primary.200" width="100%" alignItems="center" minH="80vh" classname="contactstyle">
+                    <Flex w="100%"  flexDir="column" alignItems="center" maxWidth={1500} paddingY={{base: "10", sm: "20"}}>
                         <Flex flexDir="column" alignItems="center">
                             <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
                             <Heading size="lg" color="text.950">GET IN TOUCH TODAY!</Heading>
@@ -66,23 +66,23 @@ function ContactForm() {
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Email address</FormLabel>
-                                        <Input type="email" name="user_email" placeholder="example@email.com" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="email" name="user_email" placeholder="example@email.com" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}}>
                                         <FormLabel>Phone number</FormLabel>
-                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="tel" name="user_phone" placeholder="+358 12 345 6789" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} isRequired>
                                         <FormLabel>Subject</FormLabel>
-                                        <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Input>
+                                        <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
                                 <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
                                     <FormControl marginY={3} marginX={{base: 0, lg: 3}} flexDir={{base: "column", lg: "row"}}>
                                         <FormLabel>Message</FormLabel>
-                                        <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='background.400' isInvalid errorBorderColor='red.300'></Textarea>
+                                        <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='text.950' isInvalid errorBorderColor='red.300'></Textarea>
                                     </FormControl>
                                     <Flex justifyContent="center" alignItems="end">
                                         <Button type="submit" margin={5} maxWidth="fit-content" backgroundColor="primary.300" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}} leftIcon={<EmailIcon />} variant='solid' isLoading={loading}>
@@ -101,7 +101,6 @@ function ContactForm() {
                         </Flex>
                     </Flex>
                 </Flex>
-                <Wave fill="#121007" paused={false} style={{ display: 'flex', height: "10vh", backgroundColor: "#f5cba3"}} options={{height: 40, amplitude: 20, speed: 0.2, points: 4}}/>
             </Flex>
     </>
   );
