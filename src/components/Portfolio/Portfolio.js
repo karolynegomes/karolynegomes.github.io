@@ -54,8 +54,8 @@ function Portfolio() {
   return (
     <>
     <ScrollRestoration/>
-        <Flex flexDir="column" id="portfolio" as="article">
-            <Flex justifyContent="center" bg="primary.100" minH="80vh" >
+        <Flex flexDir="column" id="portfolio" as="article" bg="#FCFAF5">
+            <Flex justifyContent="center" minH="80vh" >
                 <Flex flexDirection="column" maxWidth={1500} paddingY={{base: "10", sm: "20"}}>
                 <Center as="section">
                     <Flex flexDir="column" alignItems="center">
@@ -64,7 +64,7 @@ function Portfolio() {
                         <Text marginTop={5} w="80%">Every project is a fresh canvas, an opportunity to craft solutions, navigate challenges, and unveil the true potential of creativity and determination.</Text>
                     </Flex>
                 </Center>
-                <Grid  as="section" templateColumns='repeat(6, 1fr)' gap="10" padding={{base: 10, md: 20}} justifyContent="center">
+                <Grid as="section" templateColumns='repeat(6, 1fr)' gap="10" padding={{base: 10, md: 20}} justifyContent="center">
                     {Array.from({ length: 6 }).map((_, index) => (
                     <GridItem key={index} colSpan={{ base: 6, md: 3, lg: 3, xl: 2}}>
                         <PortfolioCard cards={[cards[index]]}/>

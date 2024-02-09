@@ -9,7 +9,7 @@ html {
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
   }
 
   *::-webkit-scrollbar-track {
@@ -106,8 +106,3 @@ nav {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
    }
-
-
-.contactstyle {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}

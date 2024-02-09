@@ -10,7 +10,7 @@ function PortfolioCard(props) {
 {props.cards.map((card) => (
 
   <Link to="/project" key={card.id}>
-    <Card key={card.id} border="2px" borderColor="transparent" borderRadius={5} bgColor="secondary.50" _hover={{border: "2px", borderColor:"text.950"}}  >
+    <Card key={card.id} border="2px" borderColor="transparent" borderRadius={5} bgColor="secondary.100" _hover={{border: "2px", borderColor:"text.950"}}  >
       <Image src={card.photo} alt={card.alt} borderTopRadius={5}/>
           <Flex flexDir="column" margin={10}>
             <Heading size={{base: "xs", sm: "lg"}} color="text.950">{card.name}</Heading>
