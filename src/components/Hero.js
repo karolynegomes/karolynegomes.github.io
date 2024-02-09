@@ -43,7 +43,7 @@ function Hero() {
           </Flex>
           <Flex flexDir={{base: "column", md: "row"}} alignItems="center" marginX={{base: "5", lg:"75", xl: "100"}} marginBottom={10} justifyContent={{base: "center", lg: "flex-start"}} zIndex={30}>
             <Button margin={5} size='md' backgroundColor="primary.200" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}} onClick={downloadCV}>Download my CV</Button>
-            <Button as={Link} to="contact" spy={true} smooth={true} offset={-200} duration={1000} margin={5} backgroundColor="primary.200" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}}>Hire me</Button>
+            <Button as={Link} to="contact" spy={true} smooth={true} offset={-200} duration={2500} margin={5} backgroundColor="primary.200" color="text.950" _hover={{backgroundColor: "accent.400", color:"white"}}>Hire me</Button>
           </Flex>
         </Flex>
         <Flex as="figure" w={{base: "90%", lg: "30%"}} alignItems="end" justifyContent="center" marginTop={{base: 50, lg: 120}} marginRight={5} position="relative">
