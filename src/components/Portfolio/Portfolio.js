@@ -60,7 +60,7 @@ function Portfolio() {
                 <Center as="section">
                     <Flex flexDir="column" alignItems="center">
                         <Text align="center"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> My projects</Text>
-                        <Heading align="center">VISIT MY PORTFOLIO</Heading>
+                        <Heading align="center">Visit my portfolio</Heading>
                         <Text marginTop={5} w="80%">Every project is a fresh canvas, an opportunity to craft solutions, navigate challenges, and unveil the true potential of creativity and determination.</Text>
                     </Flex>
                 </Center>

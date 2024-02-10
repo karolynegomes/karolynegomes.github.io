@@ -51,7 +51,7 @@ function ContactForm() {
                     <Flex w="100%"  flexDir="column" alignItems="center" maxWidth={1500} paddingY={{base: "10", sm: "20"}}>
                         <Flex flexDir="column" alignItems="center">
                             <Text align="left" color="text.950"><Icon color="accent.500" as={BsFillPinAngleFill}></Icon> Find me</Text>
-                            <Heading size="lg" color="text.950">GET IN TOUCH TODAY!</Heading>
+                            <Heading size="lg" color="text.950">Get in touch today!</Heading>
                         </Flex>
                         <Flex flexDir="column" padding={5} w="100%">
                             <Flex as="section" paddingX={{base: 1, sm: 10}} borderRadius={5}>
