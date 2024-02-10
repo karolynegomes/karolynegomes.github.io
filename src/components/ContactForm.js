@@ -81,8 +81,8 @@ function ContactForm() {
                                         <Input type="text" name="user_subject" placeholder="Type the subject here" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Input>
                                     </FormControl>
                                 </Flex>
-                                <Flex justifyContent="space-between" flexDir={{base: "column", lg: "row"}}>
-                                    <FormControl marginY={3} marginX={{base: 0, lg: 3}} flexDir={{base: "column", lg: "row"}}>
+                                <Flex justifyContent="space-between" flexDir="column">
+                                    <FormControl marginY={3} paddingX={{base: 0, lg: 3}} w={{base: "100%", lg: "100%"}} flexDir={{base: "column", lg: "row"}}>
                                         <FormLabel>Message</FormLabel>
                                         <Textarea type="message" name="message" placeholder="Type your message here" backgroundColor="secondary.50" focusBorderColor='text.950' errorBorderColor='red.300'></Textarea>
                                     </FormControl>
@@ -91,11 +91,13 @@ function ContactForm() {
                                             {loading ? <Spinner size="sm" color="white" /> : 'Send message'}
                                         </Button>
                                     </Flex>
-                                    {(formStatus === 'success' || formStatus === 'error') && (
-                                        <Alert status={formStatus === 'success' ? 'success' : 'error'} borderRadius={10}>
+                                </Flex>
+                                <Flex justifyContent="center" marginY={10}>
+                                {(formStatus === 'success' || formStatus === 'error') && (
+                                        <Alert status={formStatus === 'success' ? 'success' : 'error'} borderRadius={10} w="fit-content">
                                             <AlertIcon />
                                             {formStatus === 'success' ? "Message sent. I will get back to you very soon!" : "There was an error processing your message. Please try again or send me an email to karolynegomesdamota@gmail"}
-                                            <CloseButton alignSelf='flex-start' position='relative' right={-1} top={-1} onClick={closeAlert}/>
+                                            <CloseButton alignSelf='flex-start' position='relative' right={0} top={0} onClick={closeAlert}/>
                                         </Alert>
                                     )}
                                 </Flex>
